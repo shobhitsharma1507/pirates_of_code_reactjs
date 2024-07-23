@@ -1,0 +1,27 @@
+.sidebar-container{
+    max-width: 282px;
+    width: 282px;
+    height: 700px;
+}
+.sidebar-title{
+    text-align: center;
+    /* background-color: #b2b4b6; */
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+/* .sidebar-item h3{
+    margin: auto;
+} */
+.sidebar-items{
+    max-height: 620px;
+}
+.sidebar-item{
+    --sidebar-item-padding: 20px;
+    --sidebar-item-border-width: 1px;
+    width: calc(100% - var(--sidebar-item-padding));
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    height: calc(60px - var(--sidebar-item-border-width));
+    
+}

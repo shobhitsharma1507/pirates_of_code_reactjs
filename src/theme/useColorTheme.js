@@ -5,34 +5,34 @@ import { getCustomTheme } from "./theme";
 import useSystemTheme from "./useSystemTheme";
 
 export const useColorTheme = () => {
-  const [mode, setMode] = React.useState("dark");
-  const customizeLi = {theme: "light"};
-  const { theme } = useSystemTheme();
+    const [mode, setMode] = React.useState("dark");
+    const customizeLi = { theme: "light" };
+    const { theme } = useSystemTheme();
 
-  React.useEffect(() => {
-    if (customizeLi?.theme === "system") {
-      setMode(theme);
-    } else if (customizeLi?.theme === "light") {
-      setMode("light");
-    } else if (customizeLi?.theme === "dark") {
-      setMode("dark");
-    } else {
-        setMode("light")
-    }
-  }, []);
+    React.useEffect(() => {
+        if (customizeLi?.theme === "system") {
+            setMode(theme);
+        } else if (customizeLi?.theme === "light") {
+            setMode("light");
+        } else if (customizeLi?.theme === "dark") {
+            setMode("dark");
+        } else {
+            setMode("light");
+        }
+    }, []);
 
-  const toggleThemeMode = () => {
-    setMode((prev) => (prev === "light" ? "dark" : "light"));
-  };
+    const toggleThemeMode = () => {
+        setMode((prev) => (prev === "light" ? "dark" : "light"));
+    };
 
-  const newTheme = React.useMemo(
-    () => createTheme(getCustomTheme(mode)),
-    [mode],
-  );
+    const newTheme = React.useMemo(
+        () => createTheme(getCustomTheme(mode)),
+        [mode]
+    );
 
-  return {
-    theme: newTheme,
-    mode,
-    toggleThemeMode,
-  };
+    return {
+        theme: newTheme,
+        mode,
+        toggleThemeMode,
+    };
 };

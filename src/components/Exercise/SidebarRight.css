@@ -1,0 +1,32 @@
+.sidebar-container{
+    max-width: 282px;
+    width: 282px;
+    height: 700px;
+}
+.sidebar-title{
+    text-align: center;
+    /* background-color: #b2b4b6; */
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.sidebar-question-count-box {
+    width: 282px;
+    padding-top: 15px;
+    gap:5px;
+    /* flex: 1 1 1 1 calc(25% - 5px); */
+    justify-content: space-evenly;
+}
+
+.sidebar-question-count {
+    width: 54px;
+    max-width: 54px;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 35px;
+    box-shadow: 1px 1px gray;
+    border-radius: 4px;
+}
