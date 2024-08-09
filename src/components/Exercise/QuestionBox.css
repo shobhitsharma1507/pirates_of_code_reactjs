@@ -4,5 +4,5 @@
 }
 
 .question-box-inner {
-    height: 560px;
+    height: calc(100% - 140px);
 }
