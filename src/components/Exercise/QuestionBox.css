@@ -1,0 +1,8 @@
+.quesbox-continer {
+    height: calc(100%);
+    width: calc(100% - 564px);
+}
+
+.question-box-inner {
+    height: 560px;
+}

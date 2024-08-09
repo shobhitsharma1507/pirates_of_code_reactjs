@@ -1,29 +1,35 @@
-
-.root{
+.root {
   width: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .custom-scroll-bar {
   overflow-y: scroll;
   /* scrollbar-width: thin; /
   / scrollbar-color: gray transparent; */
   transition: background-color 0.3s;
 }
+
 .custom-scroll-bar::-webkit-scrollbar {
   width: 6px;
 }
+
 .custom-scroll-bar::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 4px;
 }
+
 .custom-scroll-bar::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 4px;
 }
+
 .custom-scroll-bar:hover::-webkit-scrollbar-thumb {
   background-color: gray;
 }

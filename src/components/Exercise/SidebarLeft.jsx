@@ -2,33 +2,8 @@ import { Box } from "@mui/material";
 import React from "react";
 import "./SidebarLeft.css";
 
-const SidebarLeft = () => {
-    const chapters = [
-        "Variables",
-        "Control Flow",
-        "Loops",
-        "Operators",
-        "Functions",
-        "Events",
-        "Array",
-        "String",
-        "Variables",
-        "Control Flow",
-        "Loops",
-        "Operators",
-        "Functions",
-        "Events",
-        "Array",
-        "String",
-        "Variables",
-        "Control Flow",
-        "Loops",
-        "Operators",
-        "Functions",
-        "Events",
-        "Array",
-        "String",
-    ];
+const SidebarLeft = ({ chapters, onSelectChapter }) => {
+
     return (
         <Box
             className="sidebar-container"
@@ -36,12 +11,12 @@ const SidebarLeft = () => {
             color="text.main"
         >
             <Box className="sidebar-title flex-row" bgcolor="background.sidebarTitle" >
-                <h3>JavaScript Exercises</h3>
+                JavaScript
             </Box>
             <Box className="sidebar-items custom-scroll-bar">
                 {chapters.map((e, i) => (
-                    <Box className="sidebar-item flex-row">
-                        <h4>{e}</h4>
+                    <Box className="sidebar-item flex-row" variant="h4">
+                        {e}
                     </Box>
                 ))}
             </Box>

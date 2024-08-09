@@ -1,4 +1,9 @@
-.exercise-container{
-    justify-content: space-between;
+.exercise-page {
+    height: 100vh;
+}
+
+.exercise-container {
+    /* justify-content: space-between; */
     width: 100%;
+    height: calc(100vh - 80px);
 }

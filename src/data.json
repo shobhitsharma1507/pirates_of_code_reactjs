@@ -1,0 +1,882 @@
+{
+    "categories": {
+        "HTML": {
+            "MCQ": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "What does HTML stand for?",
+                                "options": [
+                                    "Hyper Text Markup Language",
+                                    "Home Tool Markup Language",
+                                    "Hyperlinks and Text Markup Language",
+                                    "None of these"
+                                ],
+                                "answer": "Hyper Text Markup Language"
+                            },
+                            {
+                                "question": "Which of the following is a block-level element in HTML?",
+                                "options": [
+                                    "<span>",
+                                    "<div>",
+                                    "<a>",
+                                    "<img>"
+                                ],
+                                "answer": "<div>"
+                            }
+                        ]
+                    },
+                    "Chapter 2": {
+                        "questions": [
+                            {
+                                "question": "What is the purpose of the <title> tag in HTML?",
+                                "options": [
+                                    "To specify the document's title",
+                                    "To specify the main heading",
+                                    "To specify the author of the document",
+                                    "To specify the document's footer"
+                                ],
+                                "answer": "To specify the document's title"
+                            }
+                        ]
+                    }
+                }
+            },
+            "True-False": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "HTML is a programming language.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The <br> tag in HTML is used to create a line break.",
+                                "answer": "True"
+                            }
+                        ]
+                    }
+                }
+            },
+            "Fill in the Blanks": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "HTML stands for ______.",
+                                "answer": "Hyper Text Markup Language"
+                            },
+                            {
+                                "question": "The <img> tag is used to display ______ in an HTML document.",
+                                "answer": "images"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "CSS": {
+            "MCQ": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "What does CSS stand for?",
+                                "options": [
+                                    "Creative Style Sheets",
+                                    "Cascading Style Sheets",
+                                    "Computer Style Sheets",
+                                    "Colorful Style Sheets"
+                                ],
+                                "answer": "Cascading Style Sheets"
+                            }
+                        ]
+                    }
+                }
+            },
+            "True-False": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "CSS is used to control the layout of multiple web pages all at once.",
+                                "answer": "True"
+                            }
+                        ]
+                    }
+                }
+            },
+            "Fill in the Blanks": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "CSS stands for ______.",
+                                "answer": "Cascading Style Sheets"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "JavaScript": {
+            "MCQ": {
+                "Chapters": {
+                    "Variables": {
+                        "questions": [
+                            {
+                                "question": "Which keyword is used to declare a variable in JavaScript?",
+                                "options": [
+                                    "var",
+                                    "let",
+                                    "const",
+                                    "All of the above"
+                                ],
+                                "answer": "All of the above"
+                            },
+                            {
+                                "question": "What is the correct syntax for declaring a variable in JavaScript?",
+                                "options": [
+                                    "var variableName;",
+                                    "variable variableName;",
+                                    "declare variableName;",
+                                    "def variableName;"
+                                ],
+                                "answer": "var variableName;"
+                            },
+                            {
+                                "question": "Which keyword declares a block-scoped variable in JavaScript?",
+                                "options": [
+                                    "var",
+                                    "let",
+                                    "const",
+                                    "Both let and const"
+                                ],
+                                "answer": "Both let and const"
+                            },
+                            {
+                                "question": "What is the scope of a variable declared with var?",
+                                "options": [
+                                    "Global or function",
+                                    "Block",
+                                    "Function",
+                                    "Global"
+                                ],
+                                "answer": "Global or function"
+                            },
+                            {
+                                "question": "Can you reassign a value to a variable declared with const?",
+                                "options": [
+                                    "Yes",
+                                    "No",
+                                    "Only if it is an object",
+                                    "Only if it is an array"
+                                ],
+                                "answer": "No"
+                            },
+                            {
+                                "question": "What is the output of: let x = 5; x = 7; console.log(x);?",
+                                "options": [
+                                    "5",
+                                    "7",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "7"
+                            },
+                            {
+                                "question": "What is the output of: var x = 10; if (true) { var x = 20; } console.log(x);?",
+                                "options": [
+                                    "10",
+                                    "20",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "20"
+                            },
+                            {
+                                "question": "What is the output of: let y = 10; if (true) { let y = 20; } console.log(y);?",
+                                "options": [
+                                    "10",
+                                    "20",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "10"
+                            },
+                            {
+                                "question": "What is the output of: const z = 15; z = 25; console.log(z);?",
+                                "options": [
+                                    "15",
+                                    "25",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "Error"
+                            },
+                            {
+                                "question": "Which keyword can be used to declare a variable that cannot be reassigned?",
+                                "options": [
+                                    "var",
+                                    "let",
+                                    "const",
+                                    "None of the above"
+                                ],
+                                "answer": "const"
+                            },
+                            {
+                                "question": "What is the default value of a variable that has been declared but not initialized?",
+                                "options": [
+                                    "0",
+                                    "null",
+                                    "undefined",
+                                    "NaN"
+                                ],
+                                "answer": "undefined"
+                            },
+                            {
+                                "question": "What is the output of: console.log(typeof undefined);?",
+                                "options": [
+                                    "undefined",
+                                    "null",
+                                    "object",
+                                    "string"
+                                ],
+                                "answer": "undefined"
+                            },
+                            {
+                                "question": "What is the output of: var a = 'Hello'; var b = a; b = 'World'; console.log(a);?",
+                                "options": [
+                                    "Hello",
+                                    "World",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "Hello"
+                            },
+                            {
+                                "question": "Which of the following is NOT a valid variable name in JavaScript?",
+                                "options": [
+                                    "_name",
+                                    "$name",
+                                    "name1",
+                                    "1name"
+                                ],
+                                "answer": "1name"
+                            },
+                            {
+                                "question": "What is the output of: var a; console.log(a);?",
+                                "options": [
+                                    "null",
+                                    "undefined",
+                                    "0",
+                                    "Error"
+                                ],
+                                "answer": "undefined"
+                            },
+                            {
+                                "question": "What does the 'typeof' operator return when used on a variable declared with let but not assigned a value?",
+                                "options": [
+                                    "number",
+                                    "string",
+                                    "object",
+                                    "undefined"
+                                ],
+                                "answer": "undefined"
+                            },
+                            {
+                                "question": "What is the output of: const obj = { a: 1 }; obj.a = 2; console.log(obj.a);?",
+                                "options": [
+                                    "1",
+                                    "2",
+                                    "undefined",
+                                    "Error"
+                                ],
+                                "answer": "2"
+                            },
+                            {
+                                "question": "What is the output of: const arr = [1, 2, 3]; arr.push(4); console.log(arr);?",
+                                "options": [
+                                    "[1, 2, 3]",
+                                    "[1, 2, 3, 4]",
+                                    "Error",
+                                    "undefined"
+                                ],
+                                "answer": "[1, 2, 3, 4]"
+                            },
+                            {
+                                "question": "What happens when you declare a variable without a keyword?",
+                                "options": [
+                                    "It becomes a global variable",
+                                    "It throws an error",
+                                    "It becomes undefined",
+                                    "It is ignored"
+                                ],
+                                "answer": "It becomes a global variable"
+                            },
+                            {
+                                "question": "What is the output of: console.log(a); var a = 5;?",
+                                "options": [
+                                    "5",
+                                    "undefined",
+                                    "Error",
+                                    "null"
+                                ],
+                                "answer": "undefined"
+                            }
+                        ]
+                    },
+                    "Control Flow": {
+                        "questions": [
+                            {
+                                "question": "Which statement is used to stop a loop in JavaScript?",
+                                "options": [
+                                    "break",
+                                    "continue",
+                                    "stop",
+                                    "exit"
+                                ],
+                                "answer": "break"
+                            },
+                            {
+                                "question": "What will be the output of `console.log(1 == '1')`?",
+                                "options": [
+                                    "true",
+                                    "false",
+                                    "undefined",
+                                    "NaN"
+                                ],
+                                "answer": "true"
+                            },
+                            {
+                                "question": "Which of the following is used to perform a conditional check in JavaScript?",
+                                "options": [
+                                    "if",
+                                    "switch",
+                                    "while",
+                                    "for"
+                                ],
+                                "answer": "if"
+                            },
+                            {
+                                "question": "How do you define a switch case in JavaScript?",
+                                "options": [
+                                    "switch (expression) { case x: }",
+                                    "if (expression) { case x: }",
+                                    "for (expression) { case x: }",
+                                    "while (expression) { case x: }"
+                                ],
+                                "answer": "switch (expression) { case x: }"
+                            },
+                            {
+                                "question": "What does the `else if` statement do?",
+                                "options": [
+                                    "Provides an alternative condition",
+                                    "Provides an additional loop",
+                                    "Provides an additional function",
+                                    "Provides an additional variable"
+                                ],
+                                "answer": "Provides an alternative condition"
+                            },
+                            {
+                                "question": "What will be the output of the following code? `console.log(2 > 1 && 3 > 1)`",
+                                "options": [
+                                    "true",
+                                    "false",
+                                    "1",
+                                    "undefined"
+                                ],
+                                "answer": "true"
+                            },
+                            {
+                                "question": "Which keyword is used to define a block of code that executes repeatedly?",
+                                "options": [
+                                    "loop",
+                                    "repeat",
+                                    "function",
+                                    "for"
+                                ],
+                                "answer": "for"
+                            },
+                            {
+                                "question": "How do you write a comment in JavaScript?",
+                                "options": [
+                                    "// Comment",
+                                    "/* Comment */",
+                                    "<!-- Comment -->",
+                                    "-- Comment"
+                                ],
+                                "answer": "// Comment"
+                            },
+                            {
+                                "question": "Which statement is used to exit a loop or switch statement early?",
+                                "options": [
+                                    "continue",
+                                    "break",
+                                    "return",
+                                    "stop"
+                                ],
+                                "answer": "break"
+                            },
+                            {
+                                "question": "Which operator is used for logical negation?",
+                                "options": [
+                                    "!",
+                                    "&",
+                                    "|",
+                                    "?"
+                                ],
+                                "answer": "!"
+                            }
+                        ]
+                    },
+                    "Loops": {
+                        "questions": [
+                            {
+                                "question": "Which loop will execute at least once?",
+                                "options": [
+                                    "for",
+                                    "while",
+                                    "do...while",
+                                    "foreach"
+                                ],
+                                "answer": "do...while"
+                            },
+                            {
+                                "question": "What is the output of the following code? `for (let i = 0; i < 3; i++) { console.log(i); }`",
+                                "options": [
+                                    "0 1 2",
+                                    "1 2 3",
+                                    "0 1 2 3",
+                                    "3 2 1"
+                                ],
+                                "answer": "0 1 2"
+                            },
+                            {
+                                "question": "Which loop is used to iterate over arrays?",
+                                "options": [
+                                    "for",
+                                    "while",
+                                    "do...while",
+                                    "for...of"
+                                ],
+                                "answer": "for...of"
+                            },
+                            {
+                                "question": "What will be the output of the following code? `let i = 0; while (i < 3) { console.log(i++); }`",
+                                "options": [
+                                    "0 1 2",
+                                    "1 2 3",
+                                    "0 1 2 3",
+                                    "3 2 1"
+                                ],
+                                "answer": "0 1 2"
+                            },
+                            {
+                                "question": "What is the correct way to write a `for` loop that starts from 10 and decreases to 0?",
+                                "options": [
+                                    "for (let i = 10; i >= 0; i--)",
+                                    "for (let i = 0; i <= 10; i--)",
+                                    "for (let i = 10; i <= 0; i++)",
+                                    "for (let i = 0; i >= 10; i++)"
+                                ],
+                                "answer": "for (let i = 10; i >= 0; i--)"
+                            },
+                            {
+                                "question": "Which loop can be used to iterate through an object's properties?",
+                                "options": [
+                                    "for...in",
+                                    "for...of",
+                                    "while",
+                                    "do...while"
+                                ],
+                                "answer": "for...in"
+                            },
+                            {
+                                "question": "What is the output of the following code? `let x = 0; do { console.log(x); x++; } while (x < 3);`",
+                                "options": [
+                                    "0 1 2",
+                                    "1 2 3",
+                                    "0 1 2 3",
+                                    "3 2 1"
+                                ],
+                                "answer": "0 1 2"
+                            },
+                            {
+                                "question": "What will be the output of the following code? `for (let i = 0; i < 5; i++) { if (i === 3) break; console.log(i); }`",
+                                "options": [
+                                    "0 1 2",
+                                    "0 1 2 3",
+                                    "1 2 3",
+                                    "0 1 2 3 4"
+                                ],
+                                "answer": "0 1 2"
+                            },
+                            {
+                                "question": "Which method is used to stop the current loop iteration in JavaScript?",
+                                "options": [
+                                    "break",
+                                    "continue",
+                                    "return",
+                                    "exit"
+                                ],
+                                "answer": "continue"
+                            },
+                            {
+                                "question": "How do you create an infinite loop in JavaScript?",
+                                "options": [
+                                    "while (true)",
+                                    "for (let i = 0; ; i++)",
+                                    "do { } while (true)",
+                                    "All of the above"
+                                ],
+                                "answer": "All of the above"
+                            }
+                        ]
+                    },
+                    "Operators": {
+                        "questions": [
+                            {
+                                "question": "What will be the result of `5 + '5'` in JavaScript?",
+                                "options": [
+                                    "55",
+                                    "10",
+                                    "Error",
+                                    "NaN"
+                                ],
+                                "answer": "55"
+                            },
+                            {
+                                "question": "Which operator is used for equality comparison?",
+                                "options": [
+                                    "==",
+                                    "===",
+                                    "!=",
+                                    "Both == and ==="
+                                ],
+                                "answer": "Both == and ==="
+                            },
+                            {
+                                "question": "What does `typeof` operator return?",
+                                "options": [
+                                    "Data type of the variable",
+                                    "Variable value",
+                                    "Variable reference",
+                                    "Variable name"
+                                ],
+                                "answer": "Data type of the variable"
+                            },
+                            {
+                                "question": "What is the result of `10 % 3`?",
+                                "options": [
+                                    "1",
+                                    "3",
+                                    "10",
+                                    "0"
+                                ],
+                                "answer": "1"
+                            },
+                            {
+                                "question": "Which operator is used to assign a value to a variable?",
+                                "options": [
+                                    "=",
+                                    "==",
+                                    "===",
+                                    "=>"
+                                ],
+                                "answer": "="
+                            },
+                            {
+                                "question": "What will be the result of `!true`?",
+                                "options": [
+                                    "false",
+                                    "true",
+                                    "0",
+                                    "1"
+                                ],
+                                "answer": "false"
+                            },
+                            {
+                                "question": "Which operator is used for logical AND operation?",
+                                "options": [
+                                    "&&",
+                                    "||",
+                                    "!",
+                                    "&"
+                                ],
+                                "answer": "&&"
+                            },
+                            {
+                                "question": "What is the result of `5 ** 2`?",
+                                "options": [
+                                    "25",
+                                    "10",
+                                    "5",
+                                    "2"
+                                ],
+                                "answer": "25"
+                            },
+                            {
+                                "question": "Which operator is used to concatenate strings?",
+                                "options": [
+                                    "+",
+                                    "&",
+                                    "-",
+                                    "*"
+                                ],
+                                "answer": "+"
+                            },
+                            {
+                                "question": "What is the result of `3 == '3'`?",
+                                "options": [
+                                    "true",
+                                    "false",
+                                    "NaN",
+                                    "undefined"
+                                ],
+                                "answer": "true"
+                            }
+                        ]
+                    }
+                }
+            },
+            "True-False": {
+                "Chapters": {
+                    "Variables": {
+                        "questions": [
+                            {
+                                "question": "JavaScript variables must be declared with the `var` keyword.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "In JavaScript, the `let` keyword is used to declare block-scoped variables.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript variables can be initialized without a value.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `const` keyword allows you to reassign a variable.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "JavaScript variables are dynamically typed.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "Variable names in JavaScript are case-insensitive.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `var` keyword declares a variable that is globally scoped.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript variables declared with `var` are block-scoped.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "You can use numbers as the first character in a variable name.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "JavaScript supports variable shadowing.",
+                                "answer": "True"
+                            }
+                        ]
+                    },
+                    "Control Flow": {
+                        "questions": [
+                            {
+                                "question": "The `switch` statement can be used for multiple conditional checks.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "In JavaScript, the `if` statement can only have one condition.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `else if` statement is optional in a conditional block.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `break` statement in a `switch` block is used to exit the switch.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript's `while` loop can only run a fixed number of times.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `continue` statement skips the current iteration of a loop.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `return` statement can be used to exit a function early.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript supports only `for` and `while` loops for iteration.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "A `do-while` loop always executes at least once.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `switch` statement is more efficient than multiple `if-else` statements.",
+                                "answer": "False"
+                            }
+                        ]
+                    },
+                    "Loops": {
+                        "questions": [
+                            {
+                                "question": "The `for` loop in JavaScript can include initialization, condition, and increment.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript supports nested loops.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `for...of` loop is used to iterate over the keys of an object.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `while` loop must have an explicit exit condition.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "A `for` loop can only iterate over arrays.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `for...in` loop is used to iterate over the values of an array.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `break` statement can be used to exit a loop prematurely.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `continue` statement can be used to skip an iteration of a loop.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "A `while` loop can be used to create an infinite loop.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "Loops in JavaScript always execute a fixed number of times.",
+                                "answer": "False"
+                            }
+                        ]
+                    },
+                    "Operators": {
+                        "questions": [
+                            {
+                                "question": "The `+` operator in JavaScript is used for both addition and string concatenation.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript's `==` operator performs type coercion when comparing values.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `===` operator is used for strict equality comparison.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "JavaScript supports both unary and binary operators.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `!` operator is used for logical negation.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `&&` operator returns true if both operands are false.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `||` operator returns false if either operand is true.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "The `%` operator in JavaScript returns the remainder of a division.",
+                                "answer": "True"
+                            },
+                            {
+                                "question": "The `=` operator is used for comparison, not assignment.",
+                                "answer": "False"
+                            },
+                            {
+                                "question": "JavaScript supports increment and decrement operators (`++` and `--`).",
+                                "answer": "True"
+                            }
+                        ]
+                    }
+                }
+            },
+            "Fill in the Blanks": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "JavaScript was created by ______.",
+                                "answer": "Brendan Eich"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "React": {
+            "MCQ": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "Who developed React?",
+                                "options": [
+                                    "Google",
+                                    "Facebook",
+                                    "Twitter",
+                                    "Microsoft"
+                                ],
+                                "answer": "Facebook"
+                            }
+                        ]
+                    }
+                }
+            },
+            "True-False": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "React is a backend framework.",
+                                "answer": "False"
+                            }
+                        ]
+                    }
+                }
+            },
+            "Fill in the Blanks": {
+                "Chapters": {
+                    "Chapter 1": {
+                        "questions": [
+                            {
+                                "question": "React uses a virtual ______ for DOM manipulation.",
+                                "answer": "DOM"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
