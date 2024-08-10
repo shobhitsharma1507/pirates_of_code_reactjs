@@ -16,7 +16,9 @@ const SidebarLeft = ({ chapters, onSelectChapter }) => {
             <Box className="sidebar-items custom-scroll-bar">
                 {chapters.map((e, i) => (
                     <Box className="sidebar-item flex-row" variant="h4">
-                        {e}
+                        <Box component="span" sx={{ cursor: 'pointer', display: 'inline' }}>
+                            {e}
+                        </Box>
                     </Box>
                 ))}
             </Box>

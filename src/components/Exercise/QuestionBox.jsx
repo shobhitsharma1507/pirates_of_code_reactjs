@@ -1,39 +1,44 @@
-import { Box, Input, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import QuestionBoxActions from "./QuestionBoxActions";
 import "./QuestionBox.css";
+import BooleanQues from "./BooleanQues";
+import McqQues from "./McqQues";
+import filterDark from './../../assets/images/quesFilterDark.svg'
+import filterLight from './../../assets/images/quesFilterLight.svg'
+import hintDark from './../../assets/images/quesHintDark.svg'
+import hintLight from './../../assets/images/quesHintLight.svg'
+import QuesTag from "./QuesTag";
 
-let qNo = 1;
-let ques = "Who developed React?";
-let options = ["Google", "Facebook", "Twitter", "Microsoft"];
+
+let type = "mcq"
+let tags = ["Basics", "React", "Intro"]
 
 function QuestionBox() {
-  return (
-    <Box className="quesbox-continer" bgcolor="background.quesBox">
-      <Box className="question-box-inner">
-        <Box className="questionBox-header"></Box>
-        <Box>
-          <Box> Question {qNo}:</Box>
-          <Box>
-            <Typography>Who developed React?</Typography>
-          </Box>
-          <Box>
-            {options.map((e, i) => (
-              <Box>
-                <Typography >
-                  <Input type="checkbox"></Input>
-                  {e}
-                </Typography>
-              </Box>
-            ))}
-          </Box>
-        </Box>
-        <Box className="questionBox-filter"></Box>
 
-        <Box className="questionBox-tags"></Box>
-      </Box>
-      <QuestionBoxActions />
-    </Box>
-  );
+    return (
+        <Box className="quesbox-continer" bgcolor="background.main" color="text.main">
+            <Box className="flex-row questionBox-header">
+                <img src={filterDark} alt="filterIconDark"></img>
+            </Box>
+            <Box className="flex-col question-box-inner">
+
+                <Box >
+                    {type === "bool" && <BooleanQues />}
+                    {type === 'mcq' && <McqQues />}
+                </Box>
+
+            </Box>
+            <Box className="flex-row questionBox-filter">
+                <img src={hintDark} alt="hintIconDark"></img>
+            </Box>
+
+            <Box className="flex-row questionBox-tags" bgcolor="background.quesTag">
+                <Box component="span" sx={{ display: 'inline' }}> Tags: </Box>
+                {tags.map((e, _) => <QuesTag tagName={e} />)}
+            </Box>
+            <QuestionBoxActions />
+        </Box>
+    );
 }
 
 export default QuestionBox;

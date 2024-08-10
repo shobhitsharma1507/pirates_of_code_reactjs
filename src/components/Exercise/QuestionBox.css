@@ -1,8 +1,34 @@
 .quesbox-continer {
     height: calc(100%);
     width: calc(100% - 564px);
+    /* 282px right and left sidebars*/
 }
 
 .question-box-inner {
-    height: calc(100% - 140px);
+    height: calc(100% - 140px - 140px);
+    /*140 quesAction + 140 header,footer & tags*/
+    padding: 0 20px;
+}
+
+.questionBox-header,
+.questionBox-filter {
+    height: 40px;
+    width: 100%;
+    padding: 5px 0;
+    flex-direction: row-reverse !important;
+    margin: 0 -5px;
+}
+
+.questionBox-header>img,
+.questionBox-filter>img {
+    cursor: pointer;
+}
+
+.questionBox-tags {
+    height: 40px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 12px;
 }

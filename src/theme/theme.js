@@ -11,7 +11,7 @@ const theme = {
 
 export const getCustomTheme = (mode) => ({
     typography: {
-        fontFamily: "Inter, sans-serif",
+        fontFamily: "Source Sans Pro', sans-serif;",
         body1: {
             fontSize: "14px",
         },
@@ -25,14 +25,19 @@ export const getCustomTheme = (mode) => ({
                       navbar: "#4E6084",
                   },
                   background: {
+                      quesBox: "#2E353E",
                       sidebar: "#465967",
                       main: "#2E353E",
                       bottom: "#3A4852",
                       sidebarTitle: "#6A7F8F",
                       sumbitButton: "#14CB10",
+                      primaryBtn: "#538cfb",
+                      quesBoxActions: "#d0d9e0",
+                      quesTag: "#48535B",
                   },
                   text: {
                       main: "#ffffff",
+
                       button: "#fff",
                   },
                   border: {
@@ -57,6 +62,7 @@ export const getCustomTheme = (mode) => ({
                       quesBoxActions: "#d0d9df",
                       primaryBtn: "#538cfb",
                       sumbitButton: "#14CB10",
+                      quesTag: "#AFBBC3",
                   },
                   text: {
                       main: "#000000",

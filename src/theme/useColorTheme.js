@@ -6,7 +6,7 @@ import useSystemTheme from "./useSystemTheme";
 
 export const useColorTheme = () => {
     const [mode, setMode] = React.useState("dark");
-    const customizeLi = { theme: "light" };
+    const customizeLi = { theme: "dark" };
     const { theme } = useSystemTheme();
 
     React.useEffect(() => {

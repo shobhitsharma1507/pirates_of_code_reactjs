@@ -15,8 +15,8 @@ const SidebarRight = ({ questions, onSelectQuestion }) => {
             </Box>
             <Box className="sidebar-question-count-box flex-row">
                 {questions.map((_, i) => (
-                    <Box className="sidebar-question-count flex-row">
-                        <Typography>{i+1}</Typography>
+                    <Box className="sidebar-question-count flex-row" bgcolor="background.main">
+                        <Typography>{i + 1}</Typography>
                     </Box>
                 ))}
             </Box>

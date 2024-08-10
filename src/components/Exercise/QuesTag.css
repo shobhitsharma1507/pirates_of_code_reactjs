@@ -1,0 +1,10 @@
+.ques-tag-component {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 32px;
+    pointer-events: none;
+    /* height: 25px; */
+}
