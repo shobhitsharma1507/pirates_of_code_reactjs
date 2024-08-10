@@ -1,0 +1,17 @@
+.search-bar {
+  margin: 2%;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.homepage-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  width: 18%;
+  word-break: break-all;
+}
