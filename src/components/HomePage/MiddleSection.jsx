@@ -13,7 +13,7 @@ export const MiddleSection = () => {
           flexDirection="row"
           alignItems="center"
           justifyContent="flex-start"
-          p={"10% 8%"}
+          p={"4% 8%"}
         >
           {/* Code Block */}
           <Grid item xs={6}>
@@ -24,7 +24,7 @@ export const MiddleSection = () => {
               display="flex"
               justifyContent="flex-start"
               alignItems="center"
-              height="400px"
+              height="300px"
             >
               <Typography>
                 Code Block to Show of some Code hahahahahahahahahahaha
@@ -36,9 +36,7 @@ export const MiddleSection = () => {
           <Grid item xs={6}>
             <Box width={"80%"}>
               <Typography variant="title">Lorem Ipsum</Typography>
-              <br />
-              <Typography variant="title">Tagline here</Typography>
-              <br />
+              <Typography variant="title">Tagline here</Typography>              <br />
               <Typography variant="subtitle" mt={2}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero.
@@ -77,7 +75,7 @@ export const MiddleSection = () => {
             </Grid>
             {/* Text Content */}
             <Grid item xs={6}>
-              <Box width={"80%"}>
+              <Box width={"90%"}>
                 <Typography variant="title">Lorem Ipsum</Typography>
                 <br />
                 <Typography variant="title">Tagline here</Typography>
@@ -106,10 +104,12 @@ export const MiddleSection = () => {
                 bgcolor="white"
                 color="black"
                 p={4}
+                width={"100%"}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                height="400px"
+                height="300px"
+                mb={"4%"}
               >
                 <Typography>
                   Some Random Tool Showcase that I have to create I guess

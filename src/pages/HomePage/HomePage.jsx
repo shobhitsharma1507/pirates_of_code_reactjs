@@ -19,7 +19,7 @@ export const HomePage = () => {
           justifyContent={"center"}
         >
           <Box color={"text.main"} className="homepage-title">
-            Explore and Learn
+            Explore and <br/>Learn
           </Box>
           <Box color={"text.main"} fontSize={"2rem"}>
             With our carefully Crafted tests
