@@ -6,7 +6,6 @@ import { CustomList } from "./CustomList";
 const data = ["Home", "Exercises", "Contact Us", "About Us"]
 
 export const Navbar = () => {
-  const { theme } = useThemeContext();
 
   return (
     <Box className="custom-navbar" bgcolor="primary.navbar" color="text.main">

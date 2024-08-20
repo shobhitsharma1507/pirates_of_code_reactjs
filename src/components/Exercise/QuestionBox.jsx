@@ -17,29 +17,35 @@ import hintDark from './../../assets/images/quesHintDark.svg'
 import hintLight from './../../assets/images/quesHintLight.svg'
 <<<<<<< Updated upstream
 import QuesTag from "./QuesTag";
+import { useThemeContext } from "../../theme/ThemeContextProvider";
 
-
-let type = "mcq"
-let tags = ["Basics", "React", "Intro"]
+let type = "mcq";
+let tags = ["Basics", "React", "Intro"];
 
 function QuestionBox() {
+  const { theme, mode } = useThemeContext();
 
-    return (
-        <Box className="quesbox-continer" bgcolor="background.main" color="text.main">
-            <Box className="flex-row questionBox-header">
-                <img src={filterDark} alt="filterIconDark"></img>
-            </Box>
-            <Box className="flex-col question-box-inner">
-
-                <Box >
-                    {type === "bool" && <BooleanQues />}
-                    {type === 'mcq' && <McqQues />}
-                </Box>
-
-            </Box>
-            <Box className="flex-row questionBox-filter">
-                <img src={hintDark} alt="hintIconDark"></img>
-            </Box>
+  return (
+    <Box
+      className="quesbox-continer"
+      bgcolor="background.main"
+      color="text.main"
+    >
+      <Box className="flex-row questionBox-header">
+        <img
+          src={mode === "dark" ? filterDark : filterLight}
+          alt="filterIconDark"
+        ></img>
+      </Box>
+      <Box className="flex-col question-box-inner">
+        <Box>
+          {type === "bool" && <BooleanQues />}
+          {type === "mcq" && <McqQues />}
+        </Box>
+      </Box>
+      <Box className="flex-row questionBox-filter">
+        <img src={hintDark} alt="hintIconDark"></img>
+      </Box>
 
             <Box className="flex-row questionBox-tags" bgcolor="background.quesTag">
                 <Box component="span" sx={{ display: 'inline' }}> Tags: </Box>
