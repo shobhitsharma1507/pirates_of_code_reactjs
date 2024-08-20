@@ -20,7 +20,7 @@
 .sidebar-items {
     /* max-height: 620px; */
     height: calc(100% - 60px);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .sidebar-item {

@@ -2,7 +2,8 @@ import { Box } from "@mui/material";
 import React from "react";
 import "./SidebarLeft.css";
 
-const SidebarLeft = ({ chapters, onSelectChapter }) => {
+const SidebarLeft = ({ category, chapters = [], onSelectChapter }) => {
+    // console.log(chapters)        
 
     return (
         <Box
@@ -11,11 +12,11 @@ const SidebarLeft = ({ chapters, onSelectChapter }) => {
             color="text.main"
         >
             <Box className="sidebar-title flex-row" bgcolor="background.sidebarTitle" >
-                JavaScript
+                {category}
             </Box>
             <Box className="sidebar-items custom-scroll-bar">
                 {chapters.map((e, i) => (
-                    <Box className="sidebar-item flex-row" variant="h4">
+                    <Box onClick={(_) => onSelectChapter(e)} className="sidebar-item flex-row" variant="h4" key={i}>
                         <Box component="span" sx={{ cursor: 'pointer', display: 'inline' }}>
                             {e}
                         </Box>

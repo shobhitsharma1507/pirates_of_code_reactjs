@@ -1,22 +1,29 @@
 import { Box, Radio, RadioGroup, FormControlLabel } from '@mui/material';
-import React, { useState } from 'react';
-import './BooleanQues.css';
+import React, { useEffect, useState } from 'react';
+import './McqQues.css';
 import QuesTitle from './QuesTitle';
 
-let qNo = 1;
-let ques = "Is React a Framework?";
-let options = ["True", "False"];
 
-export default function BooleanQues() {
+// let qNo = 1;
+// let ques = "Who developed React?";
+// let options = ["Google", "Facebook", "Twitter", "Microsoft"];
+
+export default function McqQues({ qNo, ques, handleAns }) {
     const [value, setValue] = useState('');
 
     const handleChange = (event) => {
         setValue(event.target.value);
     };
 
+    useEffect(() => {
+        handleAns(prev => [value])
+    }, [value])
+
+
+
     return (
         <Box>
-            <QuesTitle title={ques} qNo={qNo} ></QuesTitle>
+            <QuesTitle title={ques.question} qNo={qNo} ></QuesTitle>
             <Box>
                 <RadioGroup
                     aria-labelledby="boolean-question-group"
@@ -24,10 +31,10 @@ export default function BooleanQues() {
                     value={value}
                     onChange={handleChange}
                 >
-                    {options.map((option, index) => (
+                    {ques.options.map((option, index) => (
                         <FormControlLabel
                             key={index}
-                            value={option.toLowerCase()}
+                            value={option}
                             control={<Radio />}
                             label={option}
                         />

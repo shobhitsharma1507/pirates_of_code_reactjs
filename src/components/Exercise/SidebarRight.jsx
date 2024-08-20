@@ -3,7 +3,7 @@ import React from "react";
 import "./SidebarRight.css"
 
 const SidebarRight = ({ questions, onSelectQuestion }) => {
-    // const quesCount = Array.from({ length: 40}, (_, i) => (i + 1).toString());
+    const quesCount = Array.from({ length: questions }, (_, i) => (i + 1).toString());
     return (
         <Box
             className="sidebar-container"
@@ -14,8 +14,8 @@ const SidebarRight = ({ questions, onSelectQuestion }) => {
                 Questions
             </Box>
             <Box className="sidebar-question-count-box flex-row">
-                {questions.map((_, i) => (
-                    <Box className="sidebar-question-count flex-row" bgcolor="background.main">
+                {quesCount.map((_, i) => (
+                    <Box onClick={() => onSelectQuestion(i)} className="sidebar-question-count flex-row" bgcolor="background.main">
                         <Typography>{i + 1}</Typography>
                     </Box>
                 ))}
