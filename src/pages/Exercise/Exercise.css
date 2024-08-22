@@ -1,9 +1,9 @@
 .exercise-page {
-    height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 .exercise-container {
-    /* justify-content: space-between; */
-    width: 100%;
-    height: calc(100vh - 80px);
+  /* justify-content: space-between; */
+  width: 100%;
+  height: 100%;
 }

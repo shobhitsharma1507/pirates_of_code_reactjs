@@ -9,7 +9,7 @@ export const HomePage = () => {
   return (
     <>
       <Box height={"100vh"}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Box
           bgcolor={"background.homepage"}
           height={"calc(100% - 80px)"}
@@ -19,7 +19,7 @@ export const HomePage = () => {
           justifyContent={"center"}
         >
           <Box color={"text.main"} className="homepage-title">
-            Explore and <br/>Learn
+            Explore and <br />Learn
           </Box>
           <Box color={"text.main"} fontSize={"2rem"}>
             With our carefully Crafted tests

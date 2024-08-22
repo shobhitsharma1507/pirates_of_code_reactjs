@@ -1,0 +1,6 @@
+.question-type-card {
+  min-height: 300px;
+  height: 30vh;
+  aspect-ratio: 324 / 420;
+  border-radius: 30px;
+}

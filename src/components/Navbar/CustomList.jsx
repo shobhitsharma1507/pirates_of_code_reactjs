@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import "./Navbar.css";
 import ThemeSwitchBtn from "../../assets/images/ThemeSwitchBtn.svg";
 import { useThemeContext } from "../../theme/ThemeContextProvider";
@@ -13,7 +13,9 @@ export const CustomList = ({ listData }) => {
       padding={"2%"}
     >
       <Box>
-        <Typography>POC</Typography>
+        <Link href="/" color="inherit" underline="none">
+          <Typography>POC</Typography>
+        </Link>
       </Box>
       <Box
         className="flex-row"
@@ -28,9 +30,11 @@ export const CustomList = ({ listData }) => {
           alignItems={"center"}
         >
           {listData.map((item) => (
-            <Typography key={item} className="nav-link">
-              {item}
-            </Typography>
+            <Link href={item.to} underline="hover" color="inherit" >
+
+              <Typography key={item.page} className="nav-link">
+                {item.page}
+              </Typography></Link>
           ))}
         </Box>
         <Box className="nav-link" mx={"6%"}>

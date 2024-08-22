@@ -53,22 +53,22 @@ function Footer() {
         fontSize="1.5rem"
         gap="1rem"
       >
-        <Link href="#" underline="hover" color="inherit" >
+        <Link href="/" underline="hover" color="inherit" >
           Home
         </Link>
-        <Link href="#" underline="hover" color="inherit" >
+        <Link href="/exercises" underline="hover" color="inherit" >
           Exercises
         </Link>
-        <Link href="#" underline="hover" color="inherit" >
+        <Link href="/contact" underline="hover" color="inherit" >
           Contact Us
         </Link>
         <Link href="#" underline="hover" color="inherit" >
           Internships
         </Link>
-        <Link href="#" underline="hover" color="inherit" >
+        <Link href="/about" underline="hover" color="inherit" >
           About Us
         </Link>
-        <Link href="#" underline="hover" color="inherit">
+        <Link href="/suggestions" underline="hover" color="inherit">
           Suggestions
         </Link>
       </Box>
