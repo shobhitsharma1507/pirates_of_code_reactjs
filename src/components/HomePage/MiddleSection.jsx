@@ -1,22 +1,28 @@
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import WavePattern from "./WavePattern";
+import { useThemeContext } from "../../theme/ThemeContextProvider";
+import "../../App.css";
 
 export const MiddleSection = () => {
+  const { theme } = useThemeContext();
+  const isMediumScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box>
       {/* Top Section */}
-      <Box height={"70vh"}>
+      <Box minHeight={isMediumScreen?"60vh":"auto"}>
         <Grid
           container
           spacing={20}
           flexDirection="row"
           alignItems="center"
-          justifyContent="flex-start"
-          p={"4% 8%"}
+          justifyContent="space-around"
+          p={"15% 10% 0 10%"}
+          
         >
           {/* Code Block */}
-          <Grid item xs={6}>
+          <Grid item md={6}>
             <Box
               bgcolor="black"
               color="white"
@@ -33,10 +39,10 @@ export const MiddleSection = () => {
           </Grid>
 
           {/* Text Content */}
-          <Grid item xs={6}>
-            <Box width={"80%"}>
-              <Typography variant="title">Lorem Ipsum</Typography>
-              <Typography variant="title">Tagline here</Typography>              <br />
+          <Grid item md={6}>
+            <Box >
+              <Typography variant="title">Lorem Ipsum Tagline here</Typography>
+              <br />
               <Typography variant="subtitle" mt={2}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero.
@@ -58,66 +64,64 @@ export const MiddleSection = () => {
       </Box>
 
       {/* Wave Section */}
-      <WavePattern />
+      
+        <WavePattern />
       {/* Bottom Section */}
-      <Box bgcolor= "#B0C4DE" pb = {4}>
-        <Box height={"80vh"}>
-          <Grid
-            container
-            spacing={4}
-            flexDirection="row"
-            alignItems="center"
-            justifyContent="flex-start"
-            px={"8%"}
-          >
-            <Grid item xs={12} md={12}>
+      <Box bgcolor="#B0C4DE" minHeight="80vh">
+        <Grid
+          container
+          columnSpacing={20}
+          rowSpacing={2}
+          // flexDirection="row"
+          alignItems="center"
+          justifyContent="space-around"
+          // marginTop={"10%"}
+          p={"8% 10%"}
+        >
+          {/* <Grid item xs={12} md={12}>
               <Box height={"15vh"}></Box>
-            </Grid>
-            {/* Text Content */}
-            <Grid item xs={6}>
-              <Box width={"90%"}>
-                <Typography variant="title">Lorem Ipsum</Typography>
-                <br />
-                <Typography variant="title">Tagline here</Typography>
-                <br />
-                <Typography variant="subtitle" mt={8}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero.
-                </Typography>
-                <br />
-                <Button
-                  variant="contained"
-                  sx={{
-                    marginTop: "5%",
-                    backgroundColor: "#4E6084",
-                    borderRadius: "40px",
-                  }}
-                >
-                  Explore
-                </Button>
-              </Box>
-            </Grid>
-
-            {/* Tool Showcase */}
-            <Grid item xs={6}>
-              <Box
-                bgcolor="white"
-                color="black"
-                p={4}
-                width={"100%"}
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                height="300px"
-                mb={"4%"}
+            </Grid> */}
+          {/* Text Content */}
+          <Grid item md={6} marginTop={"5%"}>
+            <Box className="flex-row ">
+              <Typography variant="title">Lorem Ipsum Tagline here</Typography>
+              <br />
+              <Typography variant="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero.
+              </Typography>
+              <br />
+              <Button
+                variant="contained"
+                sx={{
+                  marginTop: "4%",
+                  backgroundColor: "#4E6084",
+                  borderRadius: "40px",
+                }}
               >
-                <Typography>
-                  Some Random Tool Showcase that I have to create I guess
-                </Typography>
-              </Box>
-            </Grid>
+                Explore
+              </Button>
+            </Box>
           </Grid>
-        </Box>
+
+          {/* Tool Showcase */}
+          <Grid item md={6}>
+            <Box
+              bgcolor="white"
+              color="black"
+              p={4}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              height="300px"
+              // mb={"4%"}
+            >
+              <Typography>
+                Some Random Tool Showcase that I have to create I guess
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

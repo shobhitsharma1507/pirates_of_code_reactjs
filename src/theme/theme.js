@@ -3,6 +3,7 @@
 
 import { Padding } from "@mui/icons-material";
 
+
 const theme = {
   palette: {
     primary: {
@@ -11,15 +12,19 @@ const theme = {
   },
 };
 
+
+
 export const getCustomTheme = (mode) => ({
+  
   typography: {
     // fontFamily: "Source Sans Pro', sans-serif;",
     title: {
-      fontSize: "6rem",
+      fontSize: "4.5rem",
+  
       fontWeight: "700",
     },
     subtitle: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
     },
   },
   palette: {

@@ -1,13 +1,19 @@
 import React from "react";
 import { Box, Typography, Link } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useThemeContext } from "../../theme/ThemeContextProvider";
 
 function Footer() {
+  const { theme } = useThemeContext();
+  const isMediumScreen = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Box
       sx={{
         backgroundColor: "#2E353E",
         padding: "5%",
         display: "flex",
+        flexDirection: isMediumScreen?"row":"column",
         justifyContent: "space-between",
         alignItems: "center",
         color: "#FFFFFF",
@@ -53,19 +59,19 @@ function Footer() {
         fontSize="1.5rem"
         gap="1rem"
       >
-        <Link href="/" underline="hover" color="inherit" >
+        <Link href="/" underline="hover" color="inherit">
           Home
         </Link>
-        <Link href="/exercises" underline="hover" color="inherit" >
+        <Link href="/exercises" underline="hover" color="inherit">
           Exercises
         </Link>
-        <Link href="/contact" underline="hover" color="inherit" >
+        <Link href="/contact" underline="hover" color="inherit">
           Contact Us
         </Link>
-        <Link href="#" underline="hover" color="inherit" >
+        <Link href="#" underline="hover" color="inherit">
           Internships
         </Link>
-        <Link href="/about" underline="hover" color="inherit" >
+        <Link href="/about" underline="hover" color="inherit">
           About Us
         </Link>
         <Link href="/suggestions" underline="hover" color="inherit">
