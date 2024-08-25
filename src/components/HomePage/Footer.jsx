@@ -17,7 +17,8 @@ function Footer() {
         justifyContent: "space-between",
         alignItems: "center",
         color: "#FFFFFF",
-        height: "50vh",
+        minHeight: "50vh",
+        gap:"25px"
       }}
     >
       {/* Left Section */}
