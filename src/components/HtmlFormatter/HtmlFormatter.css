@@ -1,0 +1,79 @@
+.html-formatter {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+
+.inputBox {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputBox .btn {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+}
+
+.html-formatter .inputBox textarea {
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.html-formatter .inputBox .formatted-output {
+  padding: 10px;
+  height: 450px;
+  width: 100%;
+  font-size: 16px;
+}
+.html-formatter .inputBox .formatted-output pre {
+  padding: 10px;
+  height: 450px;
+  width: 100%;
+  overflow: auto;
+  font-size: 16px;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+select {
+  margin-left: 10px;
+}
+
+.format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.format .buttons {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.format .buttons button {
+  margin: 10px;
+  padding: 5px;
+}
