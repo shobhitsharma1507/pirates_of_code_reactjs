@@ -23,18 +23,21 @@ export default function QuestionTypeCard({ category = "JavaScript", imageUrl }) 
             />
 
             {/* Text Section */}
-            <Box className="flex-col" sx={{
+            <Box className="flex-col question-types" sx={{
                 justifyContent: "space-evenly",
                 alignItems: "center",
                 textAlign: "center"
-            }}>
-                <Box variant="h6" gutterBottom>
+
+            }}
+                color="text.main"
+            >
+                <Box className="question-type" >
                     Easy
                 </Box>
-                <Box variant="body1" gutterBottom>
+                <Box className="question-type">
                     Intermediate
                 </Box>
-                <Box variant="body2" color="text.secondary">
+                <Box className="question-type" >
                     Hard
                 </Box>
             </Box>

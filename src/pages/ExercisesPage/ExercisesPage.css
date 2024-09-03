@@ -1,0 +1,9 @@
+.exercise-cards {
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 150px 20px;
+
+}

@@ -5,14 +5,15 @@ import QuestionTypeCard from '../../components/QuestionTypePage/QuestionTypeCard
 import MCQImage from '../../assets/images/MCQ.svg'
 import BooleanImage from '../../assets/images/Boolean.svg'
 import BlanksImage from '../../assets/images/BlanksImage.svg'
+import Footer from '../../components/HomePage/Footer';
 
 
 export default function QuestionTypePage({ category = "html" }) {
 
-    return (
-        <Box>
+    return (<>
+        <Box bgcolor="background.sidebarTitle" color="text.main">
             <Box className="question-type-title">
-                {category} Treasure
+                {category.toUpperCase()} Treasure
             </Box>
             <Box className="question-type-cards flex-row">
                 <QuestionTypeCard category={category} imageUrl={MCQImage} />
@@ -21,5 +22,7 @@ export default function QuestionTypePage({ category = "html" }) {
 
             </Box>
         </Box>
+        <Footer />
+    </>
     )
 }

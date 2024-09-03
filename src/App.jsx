@@ -8,6 +8,8 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import QuestionTypePage from "./pages/QuestionTypePage/QuestionTypePage";
 import ExercisesPage from "./pages/ExercisesPage/ExercisesPage";
 import { Navbar } from "./components/Navbar/Navbar";
+import HtmlFormatter from "./components/HtmlFormatter/HtmlFormatter";
+import ToolsPage from "./pages/ToolsPage/ToolsPage";
 
 const categories = [
   "html",
@@ -43,6 +45,7 @@ function App() {
             ))}
             {/* 
             // Example route for question page
+            
             <Route
                   path={"/exercises/html/mcq"}
                   element={<Exercise selectedCategory="html" selectedType="C" />}
@@ -55,6 +58,9 @@ function App() {
                   element={<Exercise selectedCategory={category} selectedType={type.value} />}
                 />
               )))}
+
+            <Route path='/tools' element={<ToolsPage />} />
+            <Route path="/htmlformatter" element={<HtmlFormatter />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

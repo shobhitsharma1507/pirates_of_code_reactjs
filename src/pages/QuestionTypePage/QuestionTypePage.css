@@ -1,4 +1,13 @@
 .question-type-cards {
   width: 100%;
   justify-content: space-evenly;
+  padding: 50px 0;
+}
+.question-type-title{
+
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+
 }

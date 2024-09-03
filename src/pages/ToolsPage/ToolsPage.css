@@ -1,0 +1,18 @@
+.formatter-tools {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.formatter-tool-card,.conveter-tool-card{
+    min-width: 150px;
+
+}
+
+.conveter-tools {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

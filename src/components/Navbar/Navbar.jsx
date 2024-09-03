@@ -3,7 +3,7 @@ import { useThemeContext } from "../../theme/ThemeContextProvider";
 import './Navbar.css'
 import { CustomList } from "./CustomList";
 
-const data = [{ page: "Home", to: "/" }, { page: "Exercises", to: "/exercises" }, { page: "Contact Us", to: "/contact" }, { page: "About Us", to: "/about" }]
+const data = [{ page: "Home", to: "/" }, { page: "Exercises", to: "/exercises" }, { page: "Tools", to: "/tools" }, { page: "About Us", to: "/about" }]
 
 export const Navbar = () => {
 

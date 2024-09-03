@@ -4,3 +4,7 @@
   aspect-ratio: 324 / 420;
   border-radius: 30px;
 }
+.question-types{
+  height: 50%;
+  width: 100%;
+}
