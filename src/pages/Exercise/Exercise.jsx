@@ -4,12 +4,31 @@ import SidebarRight from '../../components/Exercise/SidebarRight'
 import QuestionBox from '../../components/Exercise/QuestionBox'
 import data from '../../data.json'
 import './Exercise.css'
-import SidebarLeft from '../../components/Exercise/SidebarLeft'
+import SidebarLeft from '../../components/Exercise/SidebarLeft';
+import axios from 'axios';
 
 export const Exercise = ({
     selectedCategory = 'HTML',
-    selectedType = 'A'  // A: MCQ, B: True-False, C: Blanks
+    selectedType = 'mcq'  // A: MCQ, B: True-False, C: Blanks
 }) => {
+
+    const fetch_data = async () => {
+        try {
+            const response = await axios.get('https://pirates-of-code-backend.vercel.app/api/categories');
+            // const response = await axios.get('http://localhost:5000/api/categories');
+            console.log(response.data); // Log the fetched data
+        } catch (error) {
+            console.error('Error fetching categories:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetch_data();
+        console.log(data.categories)
+
+    }, [])
+
+
     // const [selectedCategory, setSelectedCategory] = useState("HTML");
     const [selectedChapter, setSelectedChapter] = useState('Basic Concepts')
     const [selectedQuestionIndex, setSelectedQuestionIndex] = useState(0)
