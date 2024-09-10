@@ -145,7 +145,6 @@ const EditModal = ({
         onSave(updatedQuestion);
     };
 
-    console.log(selectedCategory)
 
     return (
         <Dialog open={open} onClose={onClose} fullWidth>

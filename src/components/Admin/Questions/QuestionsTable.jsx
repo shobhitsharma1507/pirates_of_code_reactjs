@@ -36,32 +36,32 @@ const QuestionsTable = ({ data, onEdit, onDelete }) => {
                                     <TableRow
                                         key={`${category.name}-${questionTypeObj.type}-${chapter.name}-${index}`} // Ensure unique keys
                                     >
-                                        <TableCell>{category.name}</TableCell>
+                                        <TableCell>{category?.name}</TableCell>
                                         <TableCell>
-                                            {questionTypeObj.type}
+                                            {questionTypeObj?.type}
                                         </TableCell>
-                                        <TableCell>{chapter.name}</TableCell>
+                                        <TableCell>{chapter?.name}</TableCell>
                                         <TableCell>
-                                            {question.question}
+                                            {question?.question}
                                         </TableCell>
                                         <TableCell>
                                             {Array.isArray(question.options)
-                                                ? question.options.join(", ")
+                                                ? question?.options.join(", ")
                                                 : "N/A"}
                                         </TableCell>
                                         <TableCell>
                                             {Array.isArray(question.answer)
-                                                ? question.answer.join(", ")
+                                                ? question?.answer.join(", ")
                                                 : "N/A"}
                                         </TableCell>
                                         <TableCell>
                                             {Array.isArray(question.tags)
-                                                ? question.tags.join(", ")
+                                                ? question?.tags.join(", ")
                                                 : ""}
                                         </TableCell>
                                         <TableCell>
                                             {Array.isArray(question.hints)
-                                                ? question.hints.join(" | ")
+                                                ? question?.hints.join(" | ")
                                                 : ""}
                                         </TableCell>
                                         <TableCell>
