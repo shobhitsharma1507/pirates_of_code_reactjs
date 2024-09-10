@@ -1,13 +1,48 @@
+.tools-page-title {
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.tools-section {
+    width: 90%;
+    padding: 25px 0;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+/* .tools-collapse-button {
+
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 8px;
+} */
+
 .formatter-tools {
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    /* background-color: blueviolet; */
 }
 
-.formatter-tool-card,.conveter-tool-card{
-    min-width: 150px;
-
+.formatter-tool-card,
+.conveter-tool-card {
+    min-width: 300px;
+    aspect-ratio: 5 / 3;
+    /* background-color: white; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    width: 25%;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .conveter-tools {
