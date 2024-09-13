@@ -23,7 +23,11 @@ const EditModal = ({
     onSave,
     categories,
     isNewQuestion,
+    qCat,
+    qType,
+    qChapter,
 }) => {
+    console.log(question, categories); // console.log(open, onClose, question); //, onSave, categories, isNewQuestion);
     const [formState, setFormState] = useState({
         question: "",
         options: ["", "", "", ""],
@@ -56,9 +60,10 @@ const EditModal = ({
                 parts: question.parts || [{ question: "", answer: "" }],
             });
             if (!isNewQuestion) {
-                setSelectedCategory(question.category || "");
-                setSelectedType(question.type || "");
-                setSelectedChapter(question.chapter || "");
+                console.log(question.category, question.type, question.chapter);
+                setSelectedCategory(qCat || "");
+                setSelectedType(qType || "");
+                setSelectedChapter(qChapter || "");
             }
         } else {
             // Reset form state for new question
@@ -75,6 +80,10 @@ const EditModal = ({
             setSelectedChapter("");
         }
     }, [question, isNewQuestion]);
+
+    useEffect(() => {
+        console.log(selectedCategory);
+    }, [selectedCategory]);
 
     const handleChange = (e) => {
         setFormState({
@@ -135,16 +144,21 @@ const EditModal = ({
             category: selectedCategory,
             type: selectedType,
             chapter: selectedChapter,
-            options: selectedType === "MCQ" ? formState.options : undefined,
-            parts: selectedType === "Blanks" ? formState.parts : undefined,
+            options:
+                selectedType === "MCQ".toLowerCase()
+                    ? formState.options
+                    : undefined,
+            parts:
+                selectedType === "Blanks".toLowerCase()
+                    ? formState.parts
+                    : undefined,
             answer:
-                selectedType === "Boolean"
+                selectedType === "Boolean".toLowerCase()
                     ? formState.answer
                     : formState.answer.split(",").map((ans) => ans.trim()),
         };
         onSave(updatedQuestion);
     };
-
 
     return (
         <Dialog open={open} onClose={onClose} fullWidth>
@@ -222,7 +236,7 @@ const EditModal = ({
                 )}
 
                 {/* Dynamic form based on question type */}
-                {selectedType === "MCQ" && (
+                {selectedType.toLowerCase() === "MCQ".toLowerCase() && (
                     <>
                         <TextField
                             label="Question"
@@ -258,7 +272,7 @@ const EditModal = ({
                     </>
                 )}
 
-                {selectedType === "Boolean" && (
+                {selectedType.toLowerCase() === "Boolean".toLowerCase() && (
                     <>
                         <TextField
                             label="Question"
@@ -287,7 +301,7 @@ const EditModal = ({
                     </>
                 )}
 
-                {selectedType === "Blanks" && (
+                {selectedType.toLowerCase() === "Blanks".toLowerCase() && (
                     <>
                         {(
                             formState.parts || [{ question: "", answer: "" }]

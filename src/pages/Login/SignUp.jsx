@@ -9,8 +9,15 @@ import {
     Box,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { userSignupAction } from "../../store/actions/auth";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 const Signup = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const { message } = useSelector((state) => state.local.auth);
+
     const theme = useTheme();
     const [formValues, setFormValues] = useState({
         name: "",
@@ -46,6 +53,16 @@ const Signup = () => {
         setError("");
         // Handle signup logic here (e.g., API call)
         console.log("Signing up with:", { name, email, password });
+
+        dispatch(
+            userSignupAction({
+                payload: { name: name, email: email, password: password },
+                successCallback: () => {
+                    navigate("/login");
+                    console.log(message);
+                },
+            })
+        );
     };
 
     return (

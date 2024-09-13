@@ -78,7 +78,14 @@ const QuestionsTable = ({ data, onEdit, onDelete }) => {
                                             <Button
                                                 variant="contained"
                                                 color="primary"
-                                                onClick={() => onEdit(question)}
+                                                onClick={() =>
+                                                    onEdit(
+                                                        question,
+                                                        category?.name,
+                                                        questionTypeObj.type,
+                                                        chapter.name
+                                                    )
+                                                }
                                             >
                                                 Edit
                                             </Button>
